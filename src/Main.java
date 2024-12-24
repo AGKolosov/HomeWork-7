@@ -4,14 +4,13 @@ public class Main {
         int capital = 2_459_000;
         int sum = 0;
         int salary = 15_000;
-        double percent = 1D / 100;
         int month = 0;
         while (sum < capital) {
             sum += salary;
-            sum = (int) (sum * (1 + percent));
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
         }
+        System.out.println("Итого " + month + " месяца(ов)");
         System.out.println("Task 2");
         int number = 0;
         while (number < 10) {
@@ -36,7 +35,7 @@ public class Main {
         System.out.println("Task 4");
         capital = 12_000_000;
         sum = salary;
-        percent = 7D / 100;
+        double percent = 7D / 100;
         month = 0;
         while (sum < capital) {
             sum = (int) (sum * (1 + percent));
